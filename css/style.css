@@ -51,7 +51,7 @@ nav a{
 .sidebar{
     padding: 20px 30px;
     width: 100%;
-    height: 80vh;
+    height: 80%;
     border: none;
     border-radius: 20px;
     background: #0074d9;
@@ -179,7 +179,7 @@ nav a{
     width: auto;
     align-self: center;
 }
-th, td{
+.table th, .table td{
     width: 30%;
 }
 th{
@@ -255,6 +255,9 @@ td .user-pic{
 .p-img{
     object-fit: cover;
 }
+.nav-pills{
+    margin: 0 20px;
+}
 .nav-tabs{
     text-align: center;
     align-self: center;
@@ -289,6 +292,19 @@ td .user-pic{
 .save:hover{
     background-color: #001f3fb6;
 }
+#calendarTable{
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    background: transparent;
+    color: #f1f1f1;
+    padding: 30px;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+#tableHeader{
+    color: #f1f1f1;
+}
 @media (max-width: 480px){
     body{
         font-size: 14px;
@@ -318,6 +334,97 @@ td .user-pic{
         margin-left: 0;
         border-radius: 0;
     }
+    .filter{
+        width: 100%;
+        border-radius: 30px;
+        font-weight: 800;
+        height: 120px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+    .col-md-3{
+        width: 50%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 780px){
+    body{
+        font-size: 14px;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+    .wrapper{
+        max-width: 100%;
+        margin: 10px auto;
+    }
+    #navbarNav{
+        justify-content: flex-end;
+    }
+    .navbar-toggler{
+        justify-self: flex-end;
+        align-self: flex-end;
+    }
+    .sidebar{
+        width: 100%;
+        position: relative;
+        border-radius: 0;
+        overflow-x: hidden;
+    }
+    .content{
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: 0;
+        border-radius: 0;
+    }
+    .filter{
+        width: 100%;
+        border-radius: 30px;
+        font-weight: 800;
+        height: 120px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+    .col-md-3{
+        width: 50%;
+    }
+}
+
+@media (min-width: 781px) and (max-width: 1020px){
+    body{
+        font-size: 12px;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        height: 100%;
+    }
+    .wrapper{
+        max-width: 90%;
+        margin: 10px auto;
+    }
+    #navbarNav{
+        justify-content: flex-end;
+    }
+    .navbar-toggler{
+        justify-self: flex-end;
+        align-self: flex-end;
+    }
+    /* .sidebar{
+        width: 100%;
+        position: relative;
+        border-radius: 0;
+        overflow-x: hidden;
+    }
+    .content{
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: 0;
+        border-radius: 0;
+    } */
     .filter{
         width: 100%;
         border-radius: 30px;
