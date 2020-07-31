@@ -29,15 +29,14 @@ nav a{
     color: #001f3f;
     text-decoration: none;
 }
-.navbar-nav li{
-    margin: 0 30px;
-}
 .navbar-brand{
-    font-family: bob;
     font-size: 30px;
+    font-family: bob;
 }
-#navbarNav{
-    justify-content: center;
+.user{
+    position: absolute;
+    right: 40px;
+    justify-self: flex-end;
 }
 .notification{
     margin-right: 15px;
@@ -57,7 +56,7 @@ nav a{
     border-radius: 20px;
     background: #0074d9;
     color: #f1f1f1;
-    position: fixed;
+    position: relative;
 }
 .profile{
     background: #001f3f83;
@@ -114,7 +113,6 @@ nav a{
     border-radius: 30px;
     width: 100%;
     margin-bottom: 30px;
-    margin-left: 420px;
 }
 .first-row{
     margin-bottom: 20px;
@@ -235,6 +233,61 @@ td .user-pic{
     padding: 5px 10px;
     color: #353535;
     font-weight: 600;
+}
+.p-details{
+    width: 100%;
+    background: #0074d99f;
+    color: #f1f1f1;
+    border: none;
+    padding: 40px 40px;
+}
+.p-details h4{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+.form-details{
+    margin-top: 60px;
+}
+.input{
+    width: 100%;
+}
+.p-img{
+    object-fit: cover;
+}
+.nav-tabs{
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+.nav-tabs a{
+    color: #001f3f;
+    text-decoration: none;
+}
+.nav-tabs li{
+    margin: 0 10px;
+}
+.tab-content{
+    border: none;
+}
+.nav-tabs .active a{
+    background: #001f3f;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.save{
+    margin-top: 20px;
+    background: #001f3f;
+    color: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+}
+.save:hover{
+    background-color: #001f3fb6;
 }
 @media (max-width: 480px){
     body{
